@@ -64,4 +64,4 @@ $response = $proxy
 	->to('http://ecovibz.com');
 ```
 
-https://ecobibz.com
+https://ecovibz.com
