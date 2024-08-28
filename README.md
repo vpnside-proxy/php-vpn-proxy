@@ -61,5 +61,5 @@ $response = $proxy
 
 		return $response;
 	})
-	->to('http://example.com');
+	->to('http://ecovibz.com');
 ```
