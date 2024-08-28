@@ -2,7 +2,7 @@
 
 
 
-This is a HTTP/HTTPS proxy script that forwards requests to a different server and returns the response. The Proxy class uses PSR7 request/response objects as input/output, and uses Guzzle to do the actual HTTP request.
+This is an HTTP/HTTPS proxy script that forwards requests to a different server and returns the response. The Proxy class uses PSR7 request/response objects as input/output and Guzzle to process the actual HTTP request.
 The implementation of the script: https://www.vpnside.com/proxy
 
 ## Installation
@@ -15,7 +15,7 @@ composer require vpnside-proxy/proxy
 
 ## Here is Example
 
-The following an example creates a request object, based on the current browser request, and forwards it to `www.vpnside.com`. The `RemoveEncodingFilter` removes the encoding headers from the original response so that the current webserver can set these correctly.
+The following example creates a request object based on the current browser request and forwards it to `www.vpnside.com`. The `RemoveEncodingFilter` removes the encoding headers from the original response so that the current web server can set these correctly.
 
 ```php
 use Proxy\Proxy;
@@ -63,3 +63,5 @@ $response = $proxy
 	})
 	->to('http://ecovibz.com');
 ```
+
+https://ecobibz.com
